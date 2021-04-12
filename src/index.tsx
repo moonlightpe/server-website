@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {ServerName} from "./utils/branding";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from "./components/navigation";
+import Navigation from "./components/mainpage/navigation/navigation";
+import {MainContent} from "./components/mainpage/main/mainContent";
 
 class Index extends React.Component<{}, {}> {
     render() {
@@ -12,6 +12,9 @@ class Index extends React.Component<{}, {}> {
                 <header>
                     <Navigation />
                 </header>
+                <main>
+                    <MainContent />
+                </main>
             </div>
         )
     }
